@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from './three.js';
 import Creator from './Creator.js';
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 import {EventEmitter} from "events";
