@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre style="display: block; overflow: visible; padding: 0.5em; background: transparent; color: white; margin: 0px; cursor: default;"><code><span style="color: rgb(173, 229, 252);">.w-layout-grid</span> {
+  <span style="color: rgb(255, 255, 170);">display</span>: -ms-grid;
+  <span style="color: rgb(255, 255, 170);">display</span>: grid;
+  <span style="color: rgb(255, 255, 170);">grid-auto-columns</span>: <span style="color: rgb(211, 99, 99);">1</span>fr;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-columns</span>: <span style="color: rgb(211, 99, 99);">1</span>fr <span style="color: rgb(211, 99, 99);">1</span>fr;
+  <span style="color: rgb(255, 255, 170);">grid-template-columns</span>: <span style="color: rgb(211, 99, 99);">1</span>fr <span style="color: rgb(211, 99, 99);">1</span>fr;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-rows</span>: auto auto;
+  <span style="color: rgb(255, 255, 170);">grid-template-rows</span>: auto auto;
+  <span style="color: rgb(255, 255, 170);">grid-row-gap</span>: <span style="color: rgb(211, 99, 99);">16px</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-gap</span>: <span style="color: rgb(211, 99, 99);">16px</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.container</span> {
+  <span style="color: rgb(255, 255, 170);">max-height</span>: <span style="color: rgb(211, 99, 99);">800px</span>;
+  <span style="color: rgb(255, 255, 170);">max-width</span>: <span style="color: rgb(211, 99, 99);">600px</span>;
+  <span style="color: rgb(255, 255, 170);">min-height</span>: <span style="color: rgb(211, 99, 99);">800px</span>;
+  <span style="color: rgb(255, 255, 170);">margin-top</span>: <span style="color: rgb(211, 99, 99);">33px</span>;
+  <span style="color: rgb(255, 255, 170);">padding-top</span>: <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">border-radius</span>: <span style="color: rgb(211, 99, 99);">6px</span>;
+  <span style="color: rgb(255, 255, 170);">background-color</span>: <span style="color: rgb(211, 99, 99);">#ececec</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.grid</span> {
+  <span style="color: rgb(255, 255, 170);">padding-right</span>: <span style="color: rgb(211, 99, 99);">20px</span>;
+  <span style="color: rgb(255, 255, 170);">padding-left</span>: <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-gap</span>: <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-columns</span>: <span style="color: rgb(211, 99, 99);">1</span>fr;
+  <span style="color: rgb(255, 255, 170);">grid-template-columns</span>: <span style="color: rgb(211, 99, 99);">1</span>fr;
+  <span style="color: rgb(255, 255, 170);">border-radius</span>: <span style="color: rgb(211, 99, 99);">20px</span> <span style="color: rgb(211, 99, 99);">20px</span> <span style="color: rgb(211, 99, 99);">0px</span> <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">background-color</span>: transparent;
+  <span style="color: rgb(255, 255, 170);">box-shadow</span>: <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(211, 99, 99);">2px</span> <span style="color: rgb(211, 99, 99);">5px</span> <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(255, 255, 170);">rgba</span>(0, 0, 0, 0.2);
+}
+
+<span style="color: rgb(173, 229, 252);">.image</span> {
+  <span style="color: rgb(255, 255, 170);">position</span>: static;
+  <span style="color: rgb(255, 255, 170);">left</span>: <span style="color: rgb(211, 99, 99);">0%</span>;
+  <span style="color: rgb(255, 255, 170);">top</span>: <span style="color: rgb(211, 99, 99);">0%</span>;
+  <span style="color: rgb(255, 255, 170);">right</span>: auto;
+  <span style="color: rgb(255, 255, 170);">bottom</span>: auto;
+  <span style="color: rgb(255, 255, 170);">overflow</span>: auto;
+  <span style="color: rgb(255, 255, 170);">width</span>: <span style="color: rgb(211, 99, 99);">150px</span>;
+  <span style="color: rgb(255, 255, 170);">height</span>: <span style="color: rgb(211, 99, 99);">150px</span>;
+  <span style="color: rgb(255, 255, 170);">max-width</span>: <span style="color: rgb(211, 99, 99);">200px</span>;
+  <span style="color: rgb(255, 255, 170);">margin</span>: <span style="color: rgb(211, 99, 99);">21px</span> auto;
+  <span style="color: rgb(255, 255, 170);">padding</span>: <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">border-radius</span>: <span style="color: rgb(211, 99, 99);">150%</span>;
+  <span style="color: rgb(255, 255, 170);">box-shadow</span>: <span style="color: rgb(211, 99, 99);">5px</span> <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(211, 99, 99);">5px</span> <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(255, 255, 170);">rgba</span>(0, 0, 0, 0.2);
+  <span style="color: rgb(255, 255, 170);">-o-object-fit</span>: cover;
+     <span style="color: rgb(255, 255, 170);">object-fit</span>: cover;
+}
+
+<span style="color: rgb(173, 229, 252);">.heading</span> {
+  <span style="color: rgb(255, 255, 170);">font-family</span>: system-ui, -apple-system, BlinkMacSystemFont, <span style="color: rgb(162, 252, 162);">'Segoe UI'</span>, Roboto, Oxygen, Ubuntu, Cantarell, <span style="color: rgb(162, 252, 162);">'Fira Sans'</span>, <span style="color: rgb(162, 252, 162);">'Droid Sans'</span>, <span style="color: rgb(162, 252, 162);">'Helvetica Neue'</span>, sans-serif;
+}
+
+<span style="color: rgb(173, 229, 252);">.grid-2</span> {
+  <span style="color: rgb(255, 255, 170);">margin-top</span>: <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">padding-top</span>: <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-columns</span>: <span style="color: rgb(211, 99, 99);">1</span>fr;
+  <span style="color: rgb(255, 255, 170);">grid-template-columns</span>: <span style="color: rgb(211, 99, 99);">1</span>fr;
+}
+
+<span style="color: rgb(173, 229, 252);">.heading-2</span> {
+  <span style="color: rgb(255, 255, 170);">margin-right</span>: auto;
+  <span style="color: rgb(255, 255, 170);">margin-left</span>: <span style="color: rgb(211, 99, 99);">15px</span>;
+  <span style="color: rgb(255, 255, 170);">padding-left</span>: <span style="color: rgb(211, 99, 99);">5px</span>;
+  <span style="color: rgb(255, 255, 170);">font-weight</span>: <span style="color: rgb(211, 99, 99);">400</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.heading-3</span> {
+  <span style="color: rgb(255, 255, 170);">margin-top</span>: -<span style="color: rgb(211, 99, 99);">29px</span>;
+  <span style="color: rgb(255, 255, 170);">margin-left</span>: <span style="color: rgb(211, 99, 99);">71px</span>;
+  <span style="color: rgb(255, 255, 170);">font-family</span>: Arial, <span style="color: rgb(162, 252, 162);">'Helvetica Neue'</span>, Helvetica, sans-serif;
+  <span style="color: rgb(255, 255, 170);">color</span>: <span style="color: rgb(211, 99, 99);">#000</span>;
+  <span style="color: rgb(255, 255, 170);">font-style</span>: normal;
+  <span style="color: rgb(255, 255, 170);">font-weight</span>: <span style="color: rgb(211, 99, 99);">700</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.div-block</span> {
+  <span style="color: rgb(255, 255, 170);">width</span>: auto;
+  <span style="color: rgb(255, 255, 170);">min-height</span>: <span style="color: rgb(211, 99, 99);">501px</span>;
+  <span style="color: rgb(255, 255, 170);">margin-right</span>: auto;
+  <span style="color: rgb(255, 255, 170);">margin-left</span>: auto;
+  <span style="color: rgb(255, 255, 170);">padding-top</span>: <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">padding-right</span>: <span style="color: rgb(211, 99, 99);">20px</span>;
+  <span style="color: rgb(255, 255, 170);">padding-left</span>: <span style="color: rgb(211, 99, 99);">20px</span>;
+  <span style="color: rgb(255, 255, 170);">background-color</span>: <span style="color: rgb(211, 99, 99);">#f2f1ff</span>;
+  <span style="color: rgb(255, 255, 170);">box-shadow</span>: <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(211, 99, 99);">2px</span> <span style="color: rgb(211, 99, 99);">5px</span> <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(255, 255, 170);">rgba</span>(0, 0, 0, 0.46);
+}
+
+<span style="color: rgb(173, 229, 252);">.text-span</span> {
+  <span style="color: rgb(255, 255, 170);">color</span>: <span style="color: rgb(211, 99, 99);">#0084ff</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.text-block</span> {
+  <span style="color: rgb(255, 255, 170);">padding-top</span>: <span style="color: rgb(211, 99, 99);">20px</span>;
+  <span style="color: rgb(255, 255, 170);">color</span>: <span style="color: rgb(211, 99, 99);">#333</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.text-span-2</span> {
+  <span style="color: rgb(255, 255, 170);">border-radius</span>: <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">background-color</span>: transparent;
+  <span style="color: rgb(255, 255, 170);">color</span>: <span style="color: rgb(211, 99, 99);">#ffc20b</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.bold-text</span> {
+  <span style="color: rgb(255, 255, 170);">color</span>: <span style="color: rgb(211, 99, 99);">#584200</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.grid-3</span> {
+  <span style="color: rgb(255, 255, 170);">padding-top</span>: <span style="color: rgb(211, 99, 99);">20px</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-gap</span>: <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-rows</span>: <span style="color: rgb(211, 99, 99);">21%</span>;
+  <span style="color: rgb(255, 255, 170);">grid-template-rows</span>: <span style="color: rgb(211, 99, 99);">21%</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.column</span> {
+  <span style="color: rgb(255, 255, 170);">background-color</span>: <span style="color: rgb(255, 255, 170);">rgba</span>(255, 255, 255, 0);
+}
+
+<span style="color: rgb(173, 229, 252);">.list</span> {
+  <span style="color: rgb(255, 255, 170);">height</span>: <span style="color: rgb(211, 99, 99);">50px</span>;
+  <span style="color: rgb(255, 255, 170);">list-style-type</span>: disc;
+}
+
+<span style="color: rgb(173, 229, 252);">.grid-4</span> {
+  <span style="color: rgb(255, 255, 170);">grid-row-gap</span>: <span style="color: rgb(211, 99, 99);">10px</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-rows</span>: <span style="color: rgb(211, 99, 99);">25px</span> <span style="color: rgb(211, 99, 99);">25px</span> <span style="color: rgb(211, 99, 99);">25px</span> <span style="color: rgb(211, 99, 99);">25px</span>;
+  <span style="color: rgb(255, 255, 170);">grid-template-rows</span>: <span style="color: rgb(211, 99, 99);">25px</span> <span style="color: rgb(211, 99, 99);">25px</span> <span style="color: rgb(211, 99, 99);">25px</span> <span style="color: rgb(211, 99, 99);">25px</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.div-block-2</span> {
+  <span style="color: rgb(255, 255, 170);">width</span>: <span style="color: rgb(211, 99, 99);">30px</span>;
+  <span style="color: rgb(255, 255, 170);">height</span>: <span style="color: rgb(211, 99, 99);">25px</span>;
+  <span style="color: rgb(255, 255, 170);">max-height</span>: <span style="color: rgb(211, 99, 99);">25px</span>;
+  <span style="color: rgb(255, 255, 170);">min-width</span>: <span style="color: rgb(211, 99, 99);">70px</span>;
+  <span style="color: rgb(255, 255, 170);">border-radius</span>: <span style="color: rgb(211, 99, 99);">5px</span>;
+  <span style="color: rgb(255, 255, 170);">background-color</span>: <span style="color: rgb(211, 99, 99);">#ffd452</span>;
+  <span style="color: rgb(255, 255, 170);">box-shadow</span>: -<span style="color: rgb(211, 99, 99);">4px</span> <span style="color: rgb(211, 99, 99);">2px</span> <span style="color: rgb(211, 99, 99);">5px</span> <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(255, 255, 170);">rgba</span>(0, 0, 0, 0.2);
+  <span style="color: rgb(255, 255, 170);">color</span>: <span style="color: rgb(211, 99, 99);">#2f2f2f</span>;
+  <span style="color: rgb(255, 255, 170);">font-weight</span>: <span style="color: rgb(211, 99, 99);">700</span>;
+  <span style="color: rgb(255, 255, 170);">text-align</span>: center;
+  <span style="color: rgb(255, 255, 170);">text-decoration</span>: none;
+}
+
+<span style="color: rgb(173, 229, 252);">.div-block-3</span> {
+  <span style="color: rgb(255, 255, 170);">width</span>: <span style="color: rgb(211, 99, 99);">70px</span>;
+  <span style="color: rgb(255, 255, 170);">height</span>: <span style="color: rgb(211, 99, 99);">25px</span>;
+  <span style="color: rgb(255, 255, 170);">background-color</span>: <span style="color: rgb(211, 99, 99);">#ff8000</span>;
+  <span style="color: rgb(255, 255, 170);">text-align</span>: center;
+}
+
+<span style="color: rgb(173, 229, 252);">.div-block-4</span> {
+  <span style="color: rgb(255, 255, 170);">border-radius</span>: <span style="color: rgb(211, 99, 99);">5px</span>;
+  <span style="color: rgb(255, 255, 170);">background-color</span>: <span style="color: rgb(211, 99, 99);">#0095ff</span>;
+  <span style="color: rgb(255, 255, 170);">box-shadow</span>: <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(211, 99, 99);">5px</span> <span style="color: rgb(211, 99, 99);">5px</span> <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(255, 255, 170);">rgba</span>(0, 0, 0, 0.2);
+  <span style="color: rgb(255, 255, 170);">text-align</span>: center;
+}
+
+<span style="color: rgb(173, 229, 252);">.div-block-5</span> {
+  <span style="color: rgb(255, 255, 170);">background-color</span>: <span style="color: rgb(211, 99, 99);">#ff0037</span>;
+  <span style="color: rgb(255, 255, 170);">font-weight</span>: <span style="color: rgb(211, 99, 99);">700</span>;
+  <span style="color: rgb(255, 255, 170);">text-align</span>: center;
+}
+
+<span style="color: rgb(173, 229, 252);">.div-block-6</span> {
+  <span style="color: rgb(255, 255, 170);">border-radius</span>: <span style="color: rgb(211, 99, 99);">5px</span>;
+  <span style="color: rgb(255, 255, 170);">background-color</span>: <span style="color: rgb(211, 99, 99);">#f70</span>;
+  <span style="color: rgb(255, 255, 170);">box-shadow</span>: <span style="color: rgb(211, 99, 99);">5px</span> <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(211, 99, 99);">5px</span> <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(255, 255, 170);">rgba</span>(0, 0, 0, 0.2);
+  <span style="color: rgb(255, 255, 170);">transition</span>: opacity <span style="color: rgb(211, 99, 99);">200ms</span> ease;
+  <span style="color: rgb(255, 255, 170);">font-weight</span>: <span style="color: rgb(211, 99, 99);">700</span>;
+  <span style="color: rgb(255, 255, 170);">text-align</span>: center;
+}
+
+<span style="color: rgb(173, 229, 252);">.div-block-7</span> {
+  <span style="color: rgb(255, 255, 170);">display</span>: flex;
+  <span style="color: rgb(255, 255, 170);">width</span>: <span style="color: rgb(211, 99, 99);">600px</span>;
+  <span style="color: rgb(255, 255, 170);">margin-right</span>: auto;
+  <span style="color: rgb(255, 255, 170);">margin-left</span>: auto;
+  <span style="color: rgb(255, 255, 170);">justify-content</span>: center;
+  <span style="color: rgb(255, 255, 170);">align-items</span>: stretch;
+  <span style="color: rgb(255, 255, 170);">background-color</span>: transparent;
+  <span style="color: rgb(255, 255, 170);">background-image</span>: <span style="color: rgb(255, 255, 170);">url</span>(<span style="color: rgb(162, 252, 162);">'../images/UC-Berkeley-campanile..jpg'</span>);
+  <span style="color: rgb(255, 255, 170);">background-position</span>: <span style="color: rgb(211, 99, 99);">50%</span> <span style="color: rgb(211, 99, 99);">40%</span>;
+  <span style="color: rgb(255, 255, 170);">background-size</span>: <span style="color: rgb(211, 99, 99);">100%</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.body</span> {
+  <span style="color: rgb(255, 255, 170);">margin-left</span>: <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">box-shadow</span>: <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(211, 99, 99);">2px</span> <span style="color: rgb(211, 99, 99);">5px</span> <span style="color: rgb(211, 99, 99);">0</span> <span style="color: rgb(255, 255, 170);">rgba</span>(0, 0, 0, 0.83);
+}
+
+<span style="color: rgb(173, 229, 252);">.grid-5</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-columns</span>: <span style="color: rgb(211, 99, 99);">0.25</span>fr <span style="color: rgb(211, 99, 99);">1</span>fr;
+  <span style="color: rgb(255, 255, 170);">grid-template-columns</span>: <span style="color: rgb(211, 99, 99);">0.25</span>fr <span style="color: rgb(211, 99, 99);">1</span>fr;
+}
+
+<span style="color: rgb(173, 229, 252);">.text-block-2</span> {
+  <span style="color: rgb(255, 255, 170);">margin-right</span>: auto;
+  <span style="color: rgb(255, 255, 170);">margin-bottom</span>: -<span style="color: rgb(211, 99, 99);">2px</span>;
+  <span style="color: rgb(255, 255, 170);">margin-left</span>: auto;
+  <span style="color: rgb(255, 255, 170);">padding-right</span>: <span style="color: rgb(211, 99, 99);">5px</span>;
+  <span style="color: rgb(255, 255, 170);">padding-bottom</span>: <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">padding-left</span>: <span style="color: rgb(211, 99, 99);">5px</span>;
+  <span style="color: rgb(255, 255, 170);">border-radius</span>: <span style="color: rgb(211, 99, 99);">150%</span>;
+  <span style="color: rgb(255, 255, 170);">background-color</span>: red;
+  <span style="color: rgb(255, 255, 170);">font-weight</span>: <span style="color: rgb(211, 99, 99);">700</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.tabs-menu</span> {
+  <span style="color: rgb(255, 255, 170);">height</span>: <span style="color: rgb(211, 99, 99);">40px</span>;
+  <span style="color: rgb(255, 255, 170);">border-radius</span>: <span style="color: rgb(211, 99, 99);">20px</span> <span style="color: rgb(211, 99, 99);">20px</span> <span style="color: rgb(211, 99, 99);">0px</span> <span style="color: rgb(211, 99, 99);">0px</span>;
+  <span style="color: rgb(255, 255, 170);">background-color</span>: <span style="color: rgb(211, 99, 99);">#f1f1f1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.tab-link-tab-2</span> {
+  <span style="color: rgb(255, 255, 170);">height</span>: <span style="color: rgb(211, 99, 99);">15px</span>;
+  <span style="color: rgb(255, 255, 170);">background-color</span>: transparent;
+}
+
+<span style="color: rgb(173, 229, 252);">.tabs</span> {
+  <span style="color: rgb(255, 255, 170);">border-radius</span>: <span style="color: rgb(211, 99, 99);">20px</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">.text-block-3</span> {
+  <span style="color: rgb(255, 255, 170);">font-size</span>: <span style="color: rgb(211, 99, 99);">20px</span>;
+  <span style="color: rgb(255, 255, 170);">font-weight</span>: <span style="color: rgb(211, 99, 99);">700</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-e4877cdd-c6d0-0366-3e35-0c381d755016-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-d4f9c141-1240-1ae2-db1f-48f0b05788fa-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">2</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">2</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">2</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">2</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-align</span>: center;
+      <span style="color: rgb(255, 255, 170);">justify-self</span>: center;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-align</span>: center;
+      <span style="color: rgb(255, 255, 170);">align-self</span>: center;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-d678cc15-9661-bee7-4c33-cc77ccd5d619-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-_1efa4a80-2f28-7ebb-56ff-7cc8a01d81b8-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-_12a056f6-bd07-037e-7fe6-3e4078f66acb-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-_530a2639-7ebc-e60e-2b60-5a503bc45414-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-_4126b689-f56f-02d6-54f3-d6c11d2d8cae-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-_9998f2a4-6b76-6839-e756-e062d3e04fe7-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-_392c8ab2-9acd-0af1-ab5c-d3e5e88032cf-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-d066a92f-65e0-cd6d-e2a6-574e0fd7cc36-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-b7695b3e-b10c-ca94-c60b-ee6de454e179-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-_97dc59cb-9970-e1e8-af38-ab0a8b1c4b62-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-align</span>: auto;
+      <span style="color: rgb(255, 255, 170);">justify-self</span>: auto;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-fcb32549-a2e2-e011-bf4e-b4c8e7240bc4-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-_0a87ce5c-1d37-c91f-b038-baab40eae253-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}
+
+<span style="color: rgb(173, 229, 252);">#w-node-_80434b63-be61-1e34-d82d-c2915eae375d-9d5a2812</span> {
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-column-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-column-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-column-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+      <span style="color: rgb(255, 255, 170);">grid-row-start</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">-ms-grid-row-span</span>: <span style="color: rgb(211, 99, 99);">1</span>;
+  <span style="color: rgb(255, 255, 170);">grid-row-end</span>: span <span style="color: rgb(211, 99, 99);">1</span>;
+}</code></pre>
+
+</body>
+</html>
