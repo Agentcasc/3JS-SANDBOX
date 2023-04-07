@@ -2,7 +2,6 @@ import * as THREE from 'three';
 import Creator from "./Creator.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 
-
 export default class AssetManager{
 
     constructor() {
@@ -17,7 +16,7 @@ export default class AssetManager{
         this.macBook();
 
         this.GLTFLoader.load(
-            "../stickynote.glb",
+            "../public/stickynote.glb",
             (gltf) => {
                 this.sticky = gltf.scene;
                 this.sticky.scale.set(0.65, 0.65, 0.65);
@@ -28,7 +27,7 @@ export default class AssetManager{
         );
 
         this.GLTFLoader.load(
-            "../pictureframe.glb",
+            "../public/pictureframe.glb",
             (gltf) => {
                 this.pictureFrame = gltf.scene;
                 this.pictureFrame.scale.set(0.05, 0.05, 0.05);
@@ -38,7 +37,7 @@ export default class AssetManager{
             });
 
         this.GLTFLoader.load(
-            "../mug.glb",
+            "../public/mug.glb",
             (gltf) => {
                 this.mug = gltf.scene;
                 this.mug.scale.set(0.15, 0.15, 0.15);
@@ -57,7 +56,7 @@ export default class AssetManager{
     macBook() {
         // load macbook
         this.GLTFLoader.load(
-            "../macbook.glb",
+            "../public/macbook.glb",
             (gltf) => {
                 this.macbook = gltf.scene;
                 this.macbook.scale.set(1, 1, 1);
