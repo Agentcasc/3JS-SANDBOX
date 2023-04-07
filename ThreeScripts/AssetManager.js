@@ -56,7 +56,7 @@ export default class AssetManager{
     macBook() {
         // load macbook
         this.GLTFLoader.load(
-            "../public/macbook.glb",
+            "/macbook.glb",
             (gltf) => {
                 this.macbook = gltf.scene;
                 this.macbook.scale.set(1, 1, 1);
