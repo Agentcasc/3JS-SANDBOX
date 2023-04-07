@@ -180,7 +180,7 @@ export default class ElementManager{
 
     createDirections() {
             this.directions = document.createElement('img');
-            this.directions.src = '../Directions.svg';
+            this.directions.src = '/Directions.svg';
             //make it smaller
             this.directions.style.width = '110px';
             this.directions.style.height = '100px';
