@@ -1,4 +1,4 @@
-import * as THREE from './three.js';
+import * as THREE from 'three';
 import Time from './Time.js';
 import Sizes from './Sizes.js';
 import Camera from './Camera.js';

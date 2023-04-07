@@ -1,4 +1,4 @@
-import * as THREE from './three.js';
+import * as THREE from "three";
 import Creator from "./Creator.js";
 
 export default class Renderer {
