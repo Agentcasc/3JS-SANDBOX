@@ -17,7 +17,7 @@ export default class AssetManager{
         this.macBook();
 
         this.GLTFLoader.load(
-            "../Models/stickynote.glb",
+            "../stickynote.glb",
             (gltf) => {
                 this.sticky = gltf.scene;
                 this.sticky.scale.set(0.65, 0.65, 0.65);
@@ -28,7 +28,7 @@ export default class AssetManager{
         );
 
         this.GLTFLoader.load(
-            "../Models/pictureframe.glb",
+            "../pictureframe.glb",
             (gltf) => {
                 this.pictureFrame = gltf.scene;
                 this.pictureFrame.scale.set(0.05, 0.05, 0.05);
@@ -38,7 +38,7 @@ export default class AssetManager{
             });
 
         this.GLTFLoader.load(
-            "../Models/mug.glb",
+            "../mug.glb",
             (gltf) => {
                 this.mug = gltf.scene;
                 this.mug.scale.set(0.15, 0.15, 0.15);
@@ -57,7 +57,7 @@ export default class AssetManager{
     macBook() {
         // load macbook
         this.GLTFLoader.load(
-            "../Models/macbook.glb",
+            "../macbook.glb",
             (gltf) => {
                 this.macbook = gltf.scene;
                 this.macbook.scale.set(1, 1, 1);
