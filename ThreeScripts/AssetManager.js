@@ -31,8 +31,8 @@ export default class AssetManager{
             (gltf) => {
                 this.pictureFrame = gltf.scene;
                 this.pictureFrame.scale.set(0.05, 0.05, 0.05);
-                this.pictureFrame.position.set(-0.3, -0.180, 0.8);
-                this.pictureFrame.rotation.set(0, -0.8, 0);
+                this.pictureFrame.position.set(-0.3, -0.125, 0.8);
+                this.pictureFrame.rotation.set(0.3, -0.8, 0);
                 this.scene.add(this.pictureFrame);
             });
 
@@ -41,9 +41,20 @@ export default class AssetManager{
             (gltf) => {
                 this.mug = gltf.scene;
                 this.mug.scale.set(0.15, 0.15, 0.15);
-                this.mug.position.set(1, 2.11, 1.5);
-                this.mug.rotation.set(0, -0.8, 0);
+                this.mug.position.set(1, 1.815, 2.125);
+                this.mug.rotation.set(0.3, -0.8, 0);
                 this.scene.add(this.mug);
+
+            });
+
+        this.GLTFLoader.load(
+            "/desk.glb",
+            (gltf) => {
+                this.desk = gltf.scene;
+                this.desk.scale.set(0.75, 0.75, 0.75);
+                this.desk.position.set(0.25, -0.68, 0.55);
+                this.desk.rotation.set(0.3, 0, 0);
+                this.scene.add(this.desk);
             });
 
 
