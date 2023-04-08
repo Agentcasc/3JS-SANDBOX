@@ -12,6 +12,8 @@
 body{
   font-family: -apple-system, BlinkMacSystemFont, "SF", "Segoe UI", Roboto, Oxygen,
   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .experience{

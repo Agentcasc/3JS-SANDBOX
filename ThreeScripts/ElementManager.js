@@ -20,11 +20,14 @@ export default class ElementManager{
                     this.loginElements();
                 } else if (this.accessed && this.viewingDesktop) {
                     this.createIcons();
+                    this.createMacOS();
                 } else if (this.accessed && !this.viewingDesktop) {
                     if (this.lastOpened === "project") {
                         console.log("Project Opened")
+                        this.createMacOS();
                     }else{
                         this.createAboutMe()
+                        this.createMacOS();
                     }
                 }
                 this.loadedElements = true;
@@ -42,12 +45,16 @@ export default class ElementManager{
                 }else if(this.accessed && this.viewingDesktop){
                     this.scene.remove(this.iconContainerObject);
                     this.scene.remove(this.iconContainerObject2);
+                    this.scene.remove(this.macOSObject);
                 } else if (this.accessed && !this.viewingDesktop) {
                     if (this.lastOpened === "project") {
                         // this.scene.remove(this.projectObject);
+                        this.scene.remove(this.macOSObject);
                     }else{
                         this.scene.remove(this.aboutMeContainerObject);
                         this.scene.remove(this.closeButtonObject);
+                        this.scene.remove(this.macOSObject);
+
                     }
                 }
                 this.loadedElements = false;
@@ -67,6 +74,8 @@ export default class ElementManager{
         this.creator.world.controls.on("REMOVE DIRECTIONS", () => {
             this.removeDirections();
         });
+
+
 
 
 
@@ -125,6 +134,14 @@ export default class ElementManager{
         this.createPicture();
     }
 
+    createMacOS(){
+        this.macOS = document.querySelector(".title-container");
+        this.macOSClone = this.macOS.cloneNode(true);
+        this.macOSObject = new CSS2DObject(this.macOSClone);
+        this.scene.add(this.macOSObject);
+        this.macOSObject.position.set(0, 0.95, -0.5);
+    }
+
     createPasswordEnter() {
         const password="Berkeley"
         this.passWordContainer = document.createElement('div');
@@ -153,6 +170,7 @@ this.passWordContainer.addEventListener("click", (event) => {
                 this.removeDirections();
                 this.creator.world.controls.createdDirections = false;
                 this.createIcons();
+                this.createMacOS();
             }
         });
     }
