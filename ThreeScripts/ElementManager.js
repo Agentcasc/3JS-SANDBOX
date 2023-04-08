@@ -135,6 +135,11 @@ export default class ElementManager{
         this.scene.add(this.passWordContainerObject);
         this.passWordContainerObject.position.set(0, 0, -0.5);
 
+        //on click
+this.passWordContainer.addEventListener("click", (event) => {
+    event.target.innerText = "";
+});
+
         this.passWordContainer.addEventListener("input", (event) => {
             console.log(event.target.innerText); // log the text content of the div whenever it changes
             if (event.target.innerText === password) {
